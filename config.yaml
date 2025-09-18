@@ -1,0 +1,61 @@
+# OpenStreetMap Urban Growth Analysis Configuration
+
+# Database Configuration
+database:
+  host: localhost
+  port: 5432
+  name: osm_urban_growth
+  user: postgres
+  password: password
+
+# OSM Data Sources
+osm:
+  overpass_url: "https://overpass-api.de/api/interpreter"
+  timeout: 300
+  cache_enabled: true
+  cache_dir: "./data/cache"
+
+# Analysis Parameters
+analysis:
+  # Default bounding box (São Paulo, Brazil as example)
+  default_bbox:
+    south: -23.6821
+    west: -46.9249
+    north: -23.4323
+    east: -46.3654
+  
+  # Years to analyze
+  comparison_years: [2010, 2015, 2020, 2024]
+  
+  # OSM features to track
+  features:
+    buildings:
+      - "building"
+      - "building:levels"
+    roads:
+      - "highway"
+    landuse:
+      - "landuse"
+      - "amenity"
+    natural:
+      - "natural"
+      - "waterway"
+
+# Visualization Settings
+visualization:
+  map_style: "OpenStreetMap"
+  color_schemes:
+    buildings: ["#2E86AB", "#A23B72", "#F18F01", "#C73E1D"]
+    roads: ["#1B4332", "#2D6A4F", "#40916C", "#52B788"]
+  
+  # Dashboard settings
+  dashboard:
+    title: "Urban Growth Analysis Dashboard"
+    port: 8501
+    host: "localhost"
+
+# Processing Settings
+processing:
+  chunk_size: 10000
+  parallel_workers: 4
+  memory_limit_gb: 8
