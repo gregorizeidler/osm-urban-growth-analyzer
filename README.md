@@ -52,11 +52,11 @@ flowchart TD
     T --> V[🖥️ Streamlit Dashboard]
     U --> V
     
-    style A fill:#e1f5fe,stroke:#01579b,stroke-width:2px,color:#000
-    style H fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000
-    style I fill:#f3e5f5,stroke:#4a148c,stroke-width:2px,color:#000
-    style V fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px,color:#000
-    style C fill:#ffebee,stroke:#b71c1c,stroke-width:3px,color:#000
+    style A fill:#b3e5fc,stroke:#01579b,stroke-width:2px,color:#000
+    style H fill:#ffcc80,stroke:#e65100,stroke-width:2px,color:#000
+    style I fill:#d1c4e9,stroke:#4a148c,stroke-width:2px,color:#000
+    style V fill:#c8e6c9,stroke:#1b5e20,stroke-width:2px,color:#000
+    style C fill:#ffcdd2,stroke:#b71c1c,stroke-width:3px,color:#000
 ```
 
 ## 📁 Estrutura do Projeto
@@ -98,10 +98,10 @@ graph LR
     G --> H[🎯 Spatial Analysis]
     H --> I[📈 Visualization Generation]
     
-    style A fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#000
-    style C fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000
-    style F fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px,color:#000
-    style I fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000
+    style A fill:#ffcdd2,stroke:#c62828,stroke-width:2px,color:#000
+    style C fill:#bbdefb,stroke:#1565c0,stroke-width:2px,color:#000
+    style F fill:#c8e6c9,stroke:#2e7d32,stroke-width:2px,color:#000
+    style I fill:#ffe0b2,stroke:#ef6c00,stroke-width:2px,color:#000
 ```
 
 ## 🚀 Funcionalidades Implementadas
@@ -370,11 +370,11 @@ classDiagram
     UrbanGrowthAnalyzer --> GrowthMetrics
     UrbanGrowthAnalyzer --> SpatialAnalyzer
     
-    style UrbanGrowthAnalyzer fill:#ffebee,stroke:#c62828,stroke-width:3px
-    style OSMDataCollector fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
-    style DataProcessor fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
-    style GrowthMetrics fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
-    style SpatialAnalyzer fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    style UrbanGrowthAnalyzer fill:#ffcdd2,stroke:#b71c1c,stroke-width:3px,color:#000
+    style OSMDataCollector fill:#bbdefb,stroke:#0d47a1,stroke-width:2px,color:#000
+    style DataProcessor fill:#c8e6c9,stroke:#1b5e20,stroke-width:2px,color:#000
+    style GrowthMetrics fill:#ffe0b2,stroke:#e65100,stroke-width:2px,color:#000
+    style SpatialAnalyzer fill:#e1bee7,stroke:#4a148c,stroke-width:2px,color:#000
 ```
 
 ---
